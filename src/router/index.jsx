@@ -24,6 +24,10 @@ const router = createBrowserRouter([
                 element: <Suspense fallback={<p>Loading...</p>}><AuthMainComponent /></Suspense>
             }
         ]
+    },
+    {
+        path: "/*",
+        element: <div>Not found page</div>
     }
 ])
 
