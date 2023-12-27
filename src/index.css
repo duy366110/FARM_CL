@@ -21,3 +21,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* FORM */
+.form-title {
+  font-size: 25px;
+  letter-spacing: .3px;
+  text-align: center;
+  text-transform: capitalize;
+}
