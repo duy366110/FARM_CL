@@ -42,7 +42,7 @@ const AuthSignUpComponent = (props) => {
         inputAddress.focus();
         inputAddress.blur();
 
-        if(emailValue && passValue && fullNameValue) {
+        if(emailValue && passValue && fullNameValue && phoneValue && addressValue) {
             console.log("User co the dang nhap");
         }
     }
