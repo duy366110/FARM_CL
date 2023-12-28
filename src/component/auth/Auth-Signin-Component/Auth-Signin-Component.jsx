@@ -36,14 +36,16 @@ const AuthSignInComponent = (props) => {
                 blur={blurEmail}
                 change={changeEmail}
                 valid={validEmail}
-                label="E-mail"/>
+                label="E-mail"
+                type="email"/>
 
             <CommonInputComponent
                 ref={passwordRef}
                 blur={blurPass}
                 change={changePass}
                 valid={validPass}
-                label="Mật khẩu"/>
+                label="Mật khẩu"
+                type="password"/>
 
             <CommonButtonComponent type="submit" title="Đăng nhập" full={true} />
 
