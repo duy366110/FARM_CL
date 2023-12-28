@@ -1,0 +1,9 @@
+
+.btn-custom {
+    background-color: var(--first-color)!important;
+    border-color: var(--first-color);
+}
+
+.btn-custom:hover {
+    border-color: var(--first-color);
+}
