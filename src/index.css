@@ -25,9 +25,18 @@ code {
 /* FORM */
 .form-title {
   font-size: 25px;
+  font-weight: 700;
   letter-spacing: .3px;
+  position: relative;
   text-align: center;
   text-transform: capitalize;
+}
+
+.form-title a {
+  color: var(--first-color);
+  left: 0px;
+  position: absolute;
+  top: 0px;
 }
 
 .form-sugget {

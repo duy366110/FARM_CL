@@ -15,7 +15,7 @@ const valid = (key, value) => {
         } else {
             return {
                 status: false,
-                message: 'Input must enter value'
+                message: 'Trường này không được trống'
             }
         }
     }
@@ -29,7 +29,7 @@ const valid = (key, value) => {
         } else {
             return {
                 status: false,
-                message: 'Input must enter email'
+                message: 'Vui lòng nhập e-mail'
             }
         }
     }
@@ -43,7 +43,7 @@ const valid = (key, value) => {
         } else {
             return {
                 status: false,
-                message: 'Enter password less 6 charter'
+                message: 'Mật khẩu tối thiểu 6 ký tự, ký tự đặc biệt'
             }
         }
     }
@@ -57,7 +57,7 @@ const valid = (key, value) => {
         } else {
             return {
                 status: false,
-                message: 'Enter phone number'
+                message: 'Nhập số điện thoại'
             }
         }
     }
