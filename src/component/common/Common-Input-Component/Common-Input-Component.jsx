@@ -20,7 +20,9 @@ const CommonInputComponent = React.forwardRef((props, ref) => {
                     onChange={props.change}
                     type={props.type? props.type : 'text'}
                     className={`form-control ${!props.valid?.status && props.valid?.status != null? 'is-invalid' : ''}`} />
-                    <small className={`${!props.valid?.status && props.valid?.status != null? classes['active'] : ''}`}>{props.valid?.message}</small>
+                    {!props.valid?.status && props.valid?.status != null && (
+                        <small className={classes['form-mesage']}>{props.valid?.message}</small>
+                    )}
             </div>
         </div>
     )

@@ -10,6 +10,7 @@ const DashboardManiComponent = lazy(() => import("../component/dashboard/Dashboa
 /** AUTH */
 const AuthMainComponent = lazy(() => import("../component/auth/Auth-Main-Component"));
 const AuthSigninComponent = lazy(() => import("../component/auth/Auth-Signin-Component/Auth-Signin-Component"));
+const AuthSignUpComponent = lazy(() => import("../component/auth/Auth-Signup-Component/Auth-Signup-Component"));
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                     {
                         path: "",
                         element: <Suspense fallback={<p>Loading...</p>}><AuthSigninComponent /></Suspense>
+                    },
+                    {
+                        path: "signup",
+                        element: <Suspense fallback={<p>Loading...</p>}><AuthSignUpComponent /></Suspense>
                     }
                 ]
             }
