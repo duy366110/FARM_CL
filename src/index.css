@@ -29,3 +29,13 @@ code {
   text-align: center;
   text-transform: capitalize;
 }
+
+.form-sugget {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-sugget a {
+  color: var(--first-color);
+  margin-left: 5px;
+}
