@@ -5,6 +5,8 @@ const AppComponent = lazy(() => import("../App"));
 
 /** DASHBOARD */
 const DashboardManiComponent = lazy(() => import("../component/dashboard/Dashboard-Main-Component"));
+const DashboardAboutComponent = lazy(() => import("../component/dashboard/Dashboard-About-Component/Dashboard-About-Component"));
+const DashboardContactComponent = lazy(() => import("../component/dashboard/Dashboard-Contact-Component/Dashboard-Contact-Component"));
 
 
 /** AUTH */
@@ -19,7 +21,17 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <Suspense fallback={<p>Loading...</p>}><DashboardManiComponent /></Suspense>
+                element: <Suspense fallback={<p>Loading...</p>}><DashboardManiComponent /></Suspense>,
+                children: [
+                    {
+                        path: "",
+                        element: <Suspense><DashboardAboutComponent /></Suspense>
+                    },
+                    {
+                        path: "contact",
+                        element: <Suspense><DashboardContactComponent /></Suspense>
+                    }
+                ]
             },
             {
                 path: "auth",
