@@ -1,5 +1,4 @@
 import CommonCardComponent from "../../../common/Common-Card-Component/Common-Card-Component";
-import classes from "./Dashboard-Page-Main-Section-Product-Component.module.css";
 
 const DashboardPageMainSectionProductComponent = (props) => {
 
