@@ -1,0 +1,26 @@
+.common-card-component {
+    color: #707070;
+    display: block;
+    text-align: center;
+}
+
+.common-card-component:hover {
+    color: #707070;
+    text-decoration: none;
+}
+
+.common-card-component img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.card-infor-name {
+    font-size: 15px;
+    letter-spacing: .3px;
+}
+
+.card-infor-price {
+    color:#303030;
+    font-size: 17px;
+    font-weight: 700;
+}

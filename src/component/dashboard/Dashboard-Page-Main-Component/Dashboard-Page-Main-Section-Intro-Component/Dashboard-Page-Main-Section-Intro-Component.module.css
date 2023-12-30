@@ -1,0 +1,24 @@
+.section-intro-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intro-items img {
+    margin-bottom: 15px;
+}
+
+.intro-items h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-align: center;
+    text-transform: capitalize;
+}
