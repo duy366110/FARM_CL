@@ -3,7 +3,7 @@ const FooterComponent = (props) => {
     
 
     return (
-        <div>Footer</div>
+        <div></div>
     )
 }
 

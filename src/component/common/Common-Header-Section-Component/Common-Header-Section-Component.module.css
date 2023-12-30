@@ -1,0 +1,36 @@
+.common-header-section-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.header-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitle {
+    color: #707070;
+    font-size: 14px;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+
+.title {
+    color: #303030;
+}
+
+.title span {
+    color: var(--first-color);
+}
+
+.icon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+}
