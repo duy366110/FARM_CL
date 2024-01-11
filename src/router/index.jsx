@@ -24,6 +24,7 @@ const router = createBrowserRouter([
                 children: [
                     {
                         path: "",
+                        loader: (() => import("../component/dashboard/Dashboard-Page-Main-Component/Dashboard-Page-Main-Component").then((m) => m.loader())),
                         element: <Suspense><DashboardPageMainComponent /></Suspense>
                     },
                 ]
