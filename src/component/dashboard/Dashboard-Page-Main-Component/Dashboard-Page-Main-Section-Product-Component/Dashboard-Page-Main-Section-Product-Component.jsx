@@ -11,29 +11,13 @@ const DashboardPageMainSectionProductComponent = (props) => {
 
             <div className="container">
                 <div className="row">
-                    <div className="col-3">
-                        <CommonCardComponent
-                            name={"Dâu tây"}
-                            img={"assets/images/products/p1.jpg.webp"} />
-                    </div>
-
-                    <div className="col-3">
-                        <CommonCardComponent
-                            name={"Bánh mỳ lúa mạch"}
-                            img={"assets/images/products/p2.jpg.webp"} />
-                    </div>
-
-                    <div className="col-3">
-                        <CommonCardComponent
-                            name={"Thịt bò"}
-                            img={"assets/images/products/p3.jpg.webp"} />
-                    </div>
-
-                    <div className="col-3">
-                        <CommonCardComponent
-                            name={"Mật ông rừng"}
-                            img={"assets/images/products/p4.jpg.webp"} />
-                    </div>
+                    {props.products.length > 0 && props.products.map((product) => {
+                        return (
+                            <div key={product._id} className="col-3">
+                                <CommonCardComponent product={product} />
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
         </div>
