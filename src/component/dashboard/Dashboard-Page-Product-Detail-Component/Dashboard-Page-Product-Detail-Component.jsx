@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 import config from "../../../configs/config.env";
 import environement from "../../../environment";
@@ -9,6 +9,7 @@ import classes from "./Dashboard-Page-Product-Detail-Component.module.css";
 
 const DashboardPageProductDetailComponent = (props) => {
     const loader = useLoaderData();
+    const navigate = useNavigate();
 
     const [product, setProduct] = useState(null);
 
@@ -40,7 +41,7 @@ const DashboardPageProductDetailComponent = (props) => {
 
             let { status } = await res.json();
             if(status) {
-                console.log("User add cart success");
+                navigate('/cart');
             }
 
         } catch (error) {

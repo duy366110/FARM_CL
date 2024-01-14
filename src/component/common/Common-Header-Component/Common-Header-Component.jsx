@@ -15,6 +15,7 @@ const CommonHeaderComponent = (props) => {
                             <ul className={classes['header-list']}>
                                 <li><NavLink to="/about">Giới thiệu</NavLink></li>
                                 <li><NavLink to="/product">Sản phẩm</NavLink></li>
+                                <li><NavLink to="/cart">Giỏ hàng</NavLink></li>
                             </ul>
 
                             <div className={classes['header-auth-tab-left']}>

@@ -1,0 +1,16 @@
+.dashboard-page-cart-component {
+    padding: 5rem 0rem;
+}
+
+.dashboard-page-cart-component table {
+    width: 100%;
+}
+
+.dashboard-page-cart-component table, .dashboard-page-cart-component table th, .dashboard-page-cart-component table td {
+    border: 1px solid #000;
+    padding: 1.5rem;
+}
+
+.dashboard-page-cart-component table td img {
+    width: 75px;
+}
