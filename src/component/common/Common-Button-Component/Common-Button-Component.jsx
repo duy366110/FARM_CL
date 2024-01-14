@@ -6,7 +6,8 @@ const CommonButtonComponent = (props) => {
         <div className={classes['common-button-component']}>
             <button
                 className={`btn btn-primary ${classes['btn-custom']} ${props.full? 'w-100' : ''}`}
-                type={props.type? props.type : 'button'}>{props.title}</button>
+                type={props.type? props.type : 'button'}
+                onClick={props.onClick}>{props.title}</button>
         </div>
     )
 }

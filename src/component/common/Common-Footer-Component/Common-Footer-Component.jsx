@@ -4,7 +4,7 @@ const FooterComponent = (props) => {
     
 
     return (
-        <footer className={classes["common-footer-component"]} style={{backgroundImage: "url('assets/images/3.jpg.webp')"}}>
+        <footer className={classes["common-footer-component"]} style={{backgroundImage: "url('/assets/images/3.jpg.webp')"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-4">

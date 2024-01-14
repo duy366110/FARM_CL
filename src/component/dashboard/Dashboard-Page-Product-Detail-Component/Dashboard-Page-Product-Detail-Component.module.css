@@ -1,0 +1,21 @@
+.dashboard-page-product-detail {
+    padding: 5rem 0rem;
+    width: 100%;
+}
+
+.product-detail-thubmnail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 1.7rem;
+    letter-spacing: .3px;
+}
