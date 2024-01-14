@@ -4,8 +4,11 @@ const environement = {
         PRO: 'https://farm-z112.onrender.com/v1/api/'
     },
     PRODUCT: {
-        root: "admin/product",
-        products: "admin/product/all"
+        root: "client/product",
+        products: "client/product/all"
+    },
+    CART: {
+        root: "client/cart"
     },
     MODEL: 'PRO' // DEV
 }
