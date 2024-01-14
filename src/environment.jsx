@@ -10,6 +10,6 @@ const environement = {
     CART: {
         root: "client/cart"
     },
-    MODEL: 'PRO' // DEV
+    MODEL: 'DEV' // PRO
 }
 export default environement;

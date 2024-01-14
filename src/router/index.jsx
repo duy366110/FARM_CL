@@ -7,6 +7,7 @@ const AppComponent = lazy(() => import("../App"));
 const DashboardManiComponent = lazy(() => import("../component/dashboard/Dashboard-Main-Component"));
 const DashboardPageMainComponent = lazy(() => import("../component/dashboard/Dashboard-Page-Main-Component/Dashboard-Page-Main-Component"));
 const DashboardPageProductDetailComponent = lazy(() => import("../component/dashboard/Dashboard-Page-Product-Detail-Component/Dashboard-Page-Product-Detail-Component"));
+const DashboardPageCartComponent = lazy(() => import("../component/dashboard/Dashboard-Page-Cart-Component/Dashboard-Page-Cart-Component"));
 
 /** AUTH */
 const AuthMainComponent = lazy(() => import("../component/auth/Auth-Main-Component"));
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
                         path: "product-detail/:product",
                         loader: (({request, params}) => import("../component/dashboard/Dashboard-Page-Product-Detail-Component/Dashboard-Page-Product-Detail-Component").then((m) => m.loader(request, params))),
                         element: <Suspense><DashboardPageProductDetailComponent /></Suspense>
+                    },
+                    {
+                        path: "cart",
+                        element: <Suspense><DashboardPageCartComponent /></Suspense>
                     }
                 ]
             },
