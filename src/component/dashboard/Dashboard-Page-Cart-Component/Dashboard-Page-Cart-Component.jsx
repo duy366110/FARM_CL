@@ -9,6 +9,7 @@ import classes from "./Dashboard-Page-Cart-Component.module.css";
 const DashboardPageCartComponent = (props) => {
 
     const [cart, setCart] = useState(null);
+    const [total, setTotal] = useState(0);
 
     useEffect(() => {
         const http = async() => {
@@ -24,8 +25,10 @@ const DashboardPageCartComponent = (props) => {
     
                 let { status, cart } = await res.json();
                 if(status) {
-                    console.log(cart);
                     setCart(cart);
+                    setTotal(cart.collections.reduce((acc, elm) => {
+                        return acc += Number(elm.quantity) * Number(elm.product.price.$numberDecimal)
+                    }, 0).toFixed(3))
                 }
 
             } catch (error) {
@@ -75,6 +78,10 @@ const DashboardPageCartComponent = (props) => {
                             <tr>
                                 <td>Số điện thoại</td>
                                 <td colSpan={4}>{cart.user.phone}</td>
+                            </tr>
+                            <tr>
+                                <td>Tổng hoá đơn</td>
+                                <td colSpan={4}>{total} VND</td>
                             </tr>
                         </tbody>
                     </table>
