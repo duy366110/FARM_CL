@@ -3,7 +3,7 @@ import ENVIRONEMENT from "../environment";
 const Config = {
     DEV: {
         URI: ENVIRONEMENT.URL.DEV,
-        USER: "659c05fcb1376203088d50a5"
+        USER: "65aa1b91b5235ecc45117612"
     },
     PRO: {
         URI: ENVIRONEMENT.URL.PRO,
